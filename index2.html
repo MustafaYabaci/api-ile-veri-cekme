@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css2.css">
+    </head>
+    <body>
+        <section>
+            <div class="authors-wrap">
+                <ul class="filters">
+                    <li>
+                        <label for="country">Select Country</label>
+                        <select id="country">
+                            <option value="hello"  disabled selected>Choose Country</option>
+                        </select>
+                    </li>
+                    <li>
+                        <fieldset>
+                            <label for="age">Age</label>
+                            <input type="number" min="0" max="100" id="age"/>
+                        </fieldset>  
+                    </li>
+                    <li>
+                        <button type="submit" id="filterId" > Apply Filters </button>
+                    </li>
+                    <li>
+                        <button class="btn-align" type="submit" onclick="newquery()">New Query</button>
+                    </li>
+                </ul>
+                <ul id="filtersList" class="authors-list"></ul>
+            </div>
+        </section>
+        
+        <script src="main2.js"></script>
+    </body>
+</html>
